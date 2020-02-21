@@ -25,4 +25,9 @@ public class MainMenu : MonoBehaviour
     {
         helpPanel.SetActive(true);
     }
+
+    public void hideHelpPanel()
+    {
+        helpPanel.SetActive(false);
+    }
 }
