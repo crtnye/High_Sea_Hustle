@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject helpPanel;
     void Start()
     {
         
@@ -18,5 +19,10 @@ public class MainMenu : MonoBehaviour
     public void multiplayerGame()
     {
         SceneManager.LoadScene("GameLobby");
+    }
+
+    public void showHelpPanel()
+    {
+        helpPanel.SetActive(true);
     }
 }
