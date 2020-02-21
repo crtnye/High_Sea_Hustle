@@ -191,6 +191,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5483208956193152168, guid: 43b3ed1df761b324887e43df9cb330c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1285391706}
+    - target: {fileID: 5483208956193152168, guid: 43b3ed1df761b324887e43df9cb330c6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: hideHelpPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483208956770293180, guid: 43b3ed1df761b324887e43df9cb330c6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
     - target: {fileID: 5483208957217875635, guid: 43b3ed1df761b324887e43df9cb330c6,
         type: 3}
       propertyPath: m_Name
@@ -326,7 +341,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c16d17550c931c344a05e5929a17e196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpPanel: {fileID: 373453273}
+  images: []
+  currentImage: {fileID: 0}
+  nextImage: {fileID: 0}
+  previousImage: {fileID: 0}
+  i: 0
 --- !u!1 &374711300
 GameObject:
   m_ObjectHideFlags: 0
