@@ -111,8 +111,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.486, y: 97.5}
-  m_SizeDelta: {x: 932.8, y: 528.2}
+  m_AnchoredPosition: {x: 0.000024796, y: 61.047}
+  m_SizeDelta: {x: 865, y: 489.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5080612216904138488
 CanvasRenderer:
@@ -185,8 +185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.9116231, y: 0.89300007}
   m_AnchorMax: {x: 0.9792294, y: 0.9765253}
-  m_AnchoredPosition: {x: -32, y: -72.172}
-  m_SizeDelta: {x: -15.6, y: 22.066002}
+  m_AnchoredPosition: {x: -36.513, y: -57.505}
+  m_SizeDelta: {x: 5.5, y: 51.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5483208956193152174
 CanvasRenderer:
@@ -308,8 +308,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17984585, y: 0.30774423}
   m_AnchorMax: {x: 0.8205377, y: 0.6926786}
-  m_AnchoredPosition: {x: 18.19, y: -333}
-  m_SizeDelta: {x: -0.000061035, y: -226.3}
+  m_AnchoredPosition: {x: -0.32517, y: -316}
+  m_SizeDelta: {x: 0.7, y: -199}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5483208956770293170
 CanvasRenderer:
@@ -339,7 +339,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 24
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -350,13 +350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'High Sea Hustle is an adaptation of the modern abstract strategy game Quarto.
-    The game consists of 16 pieces and a board with 16 locations. The pieces have
-    4 characteristics: gold or silver, tall or short, round or angular, and plain
-    or embossed. Players take turns giving their opponent a piece to place, then placing
-    the piece given to them. The object of the game is to be the first person to establish
-    a line of 4 pieces which share a common characteristic. The line can be vertical,
-    horizontal, or diagonal. '
+  m_Text: 
 --- !u!1 &5483208956864219404
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,8 +567,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.142, y: 0}
   m_AnchorMax: {x: 0.8685002, y: 0.97585195}
-  m_AnchoredPosition: {x: 4.0999756, y: 15.200012}
-  m_SizeDelta: {x: 147, y: 77.9}
+  m_AnchoredPosition: {x: 23, y: 13.039978}
+  m_SizeDelta: {x: -46, y: -63.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5483208957520515476
 CanvasRenderer:
@@ -629,6 +623,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 469882af4dd98f64f92328d04ac3e156, type: 3}
   - {fileID: 21300000, guid: f3f46b9fba9cbfe42af145822ea5a255, type: 3}
   currentImage: {fileID: 9112684118003574775}
+  currentText: {fileID: 5483208956770293171}
   nextImage: {fileID: 7852158208152356052}
   previousImage: {fileID: 8361160365037941197}
   i: 0
@@ -668,7 +663,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 618.06, y: 91.785}
+  m_AnchoredPosition: {x: 531.61, y: 61.047}
   m_SizeDelta: {x: 162.1, y: 161.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &397594202602176156
@@ -726,9 +721,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
     m_HighlightedColor: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 0.6039216}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -793,7 +788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -582, y: 97.5}
+  m_AnchoredPosition: {x: -508.56, y: 56.06201}
   m_SizeDelta: {x: 152.12, y: 151.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7067129873355463128
@@ -851,9 +846,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
     m_HighlightedColor: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 0.6039216}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
