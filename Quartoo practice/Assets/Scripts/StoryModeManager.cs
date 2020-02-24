@@ -42,6 +42,8 @@ public class StoryModeManager : MonoBehaviour
 
             currentImage.transform.SetAsLastSibling();
             currentCaption.transform.SetAsLastSibling();
+            nextButton.transform.SetAsLastSibling();
+
         }
 
         if (i < storyModeScenes.Length)
