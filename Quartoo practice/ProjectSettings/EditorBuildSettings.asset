@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GameLobby.unity
     guid: 6cfc7ed3f66677c4396441d6097effff
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/GameScene.unity
     guid: 62e4d12ee47cab942b41e0fb29078106
   - enabled: 1
     path: Assets/Scenes/StoryMode.unity
