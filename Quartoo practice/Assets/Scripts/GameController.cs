@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
     private int playerTurn;
     private bool placingPiece = false;
     private GameInfo.NetworkGameState networkGameState = GameInfo.NetworkGameState.start;
+    public GameObject GameSceneManagerObject;
 
     void Awake()
     {
@@ -396,10 +397,15 @@ public class GameController : MonoBehaviour
 
     void GameOver(char endGame)
     {
+        Debug.Log("GameOver");
+
+        bool didPlayerWin = playerTurn == 1;
+
         // May or may not need network game over function
         if (GameInfo.gameType == 'N')
         {
             // tell opponent gameover
+            didPlayerWin = networkGameState == GameInfo.NetworkGameState.myTurn;
         }
 
         // Win Condition was met
@@ -414,6 +420,13 @@ public class GameController : MonoBehaviour
             Debug.Log("Game Over: Tie");
             SceneManager.LoadScene("GameOver");
         }
+
+        if (GameSceneManagerObject != null)
+        { 
+            GameSceneManagerObject.GetComponent<GameSceneManager>().showGameOverPanel(didPlayerWin);
+        }
+        else
+            Debug.Log("GameSceneManagerObject is null");
     }
 
     void ChangeSides()

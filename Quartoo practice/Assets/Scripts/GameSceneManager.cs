@@ -7,6 +7,7 @@ public class GameSceneManager : MonoBehaviour
 {
     public GameObject helpPanel;
     public GameObject settingsPanel;
+    public GameObject gameOverPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,16 @@ public class GameSceneManager : MonoBehaviour
     {
         //Panel helpPanel = GameObject.Find("helpPanel").GetComponent<Panel>();
         helpPanel.SetActive(false);
+    }
+
+    public void showGameOverPanel(bool didWin)
+    {
+        gameOverPanel.SetActive(true);
+    }
+
+    public void hideGameOverPanel()
+    {
+        gameOverPanel.SetActive(false);
     }
 
     public void showSettingsPanel()
