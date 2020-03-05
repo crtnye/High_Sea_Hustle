@@ -10,7 +10,7 @@ public class HelpMenu : MonoBehaviour
     public Text currentText;
     public Button nextImage;
     public Button previousImage;
-    public int i = 0;
+    public int i;
 
     private string[] text =
         {
@@ -23,17 +23,21 @@ public class HelpMenu : MonoBehaviour
 
     void Start()
     {
+        i = 0;
         updatePanel();
     }
 
     public void next()
     {
-        if (i + 1 < images.Length)
+        if (i < images.Length - 1)
         {
             i++;
             updatePanel();
         }
-
+        else
+        {
+            Debug.Log("currently viewing the last image");
+        }
     }
 
     public void previous()
@@ -47,7 +51,11 @@ public class HelpMenu : MonoBehaviour
 
     private void updatePanel()
     {
-        currentImage.sprite = images[i];
-        currentText.text = text[i];
+        if (images.Length > 0)
+        {
+            currentImage.sprite = images[i];
+            currentText.text = text[i];
+        }
+
     }
 }
