@@ -214,6 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   helpPanel: {fileID: 0}
   settingsPanel: {fileID: 0}
+  gameOverPanel: {fileID: 0}
 --- !u!114 &2821629817533507363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +259,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2821629818333727478}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -388,6 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   helpPanel: {fileID: 0}
   settingsPanel: {fileID: 0}
+  gameOverPanel: {fileID: 0}
 --- !u!114 &2821629817851008390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,7 +543,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2821629818333727478}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -587,7 +589,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU WON/LOST!
+  m_Text: 
 --- !u!1 &2821629818333727242
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,8 +620,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 2821629818098223098}
   - {fileID: 2821629817567952814}
+  - {fileID: 2821629818098223098}
   - {fileID: 2821629818070744032}
   - {fileID: 2821629817533507365}
   - {fileID: 2821629817851008391}

@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
     {
         //WARNING!! THESE ARE SET ONLY FOR TESTING!! DELETE THESE LATER!! ONLY TRISTAN
         //CAN DELETE THEM! DONT DELETE WITHOUT ASKING HIM FIRST PUNKS
-        //GameInfo.gameType = 'N';
+        GameInfo.gameType = 'E';
         //GameInfo.selectPieceAtStart = 2;
 
         //DisableAllBoardSpaces();

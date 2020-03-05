@@ -8,6 +8,7 @@ public class GameSceneManager : MonoBehaviour
     public GameObject helpPanel;
     public GameObject settingsPanel;
     public GameObject gameOverPanel;
+    public UnityEngine.UI.Text gameOverMessage;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,9 @@ public class GameSceneManager : MonoBehaviour
 
     public void showGameOverPanel(bool didWin)
     {
+        string message = didWin ? "YOU WON!" : "YOU LOST";
+
+        gameOverMessage.text = message;
         gameOverPanel.SetActive(true);
     }
 
