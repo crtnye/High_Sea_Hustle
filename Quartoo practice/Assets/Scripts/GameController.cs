@@ -399,31 +399,34 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("GameOver");
 
-        bool didPlayerWin = playerTurn == 1;
+        //by default, assume the player lost
+        char playerWinStatus = 'L';
 
         // May or may not need network game over function
         if (GameInfo.gameType == 'N')
         {
             // tell opponent gameover
-            didPlayerWin = networkGameState == GameInfo.NetworkGameState.myTurn;
         }
 
-        // Win Condition was met
-        if (endGame == 'W')
+        if (playerTurn == 1) //the player won or tied
         {
-            Debug.Log("Game Over: Winner");
-            SceneManager.LoadScene("GameOver");
-        }
-        // Tie 
-        else
-        {
-            Debug.Log("Game Over: Tie");
-            SceneManager.LoadScene("GameOver");
+            // Win Condition was met
+            if (endGame == 'W')
+            {
+                Debug.Log("Game Over: Winner");
+                playerWinStatus = 'W';
+            }
+            // Tie 
+            else
+            {
+                Debug.Log("Game Over: Tie");
+                playerWinStatus = 'T';
+            }
         }
 
         if (GameSceneManagerObject != null)
         { 
-            GameSceneManagerObject.GetComponent<GameSceneManager>().showGameOverPanel(didPlayerWin);
+            GameSceneManagerObject.GetComponent<GameSceneManager>().showGameOverPanel(playerWinStatus);
         }
         else
             Debug.Log("GameSceneManagerObject is null");

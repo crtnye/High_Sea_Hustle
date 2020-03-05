@@ -34,9 +34,18 @@ public class GameSceneManager : MonoBehaviour
         helpPanel.SetActive(false);
     }
 
-    public void showGameOverPanel(bool didWin)
+    public void showGameOverPanel(char endgameStatus)
     {
-        string message = didWin ? "YOU WON!" : "YOU LOST";
+        string message;
+
+        if (endgameStatus == 'L')
+        {
+            message = "YOU LOST";
+        }
+        else
+        {
+            message = endgameStatus == 'W' ? "YOU WON!" : "YOU TIED";
+        }
 
         gameOverMessage.text = message;
         gameOverPanel.SetActive(true);
