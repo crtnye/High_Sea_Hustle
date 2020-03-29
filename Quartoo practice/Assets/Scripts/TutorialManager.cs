@@ -7,9 +7,10 @@ using UnityEngine.UI;
 public class TutorialManager : MonoBehaviour
 {
     public GameObject[] popups;
+    public GameObject[] hilights;
     private int popupIndex = 0;
+    private int hilightIndex = 0;
 
-    //these are temporary:
     private string[] captions =
     {
         /*0 -*/ "Hello! I'm Peter Parrot and I'll be showing you how to play Quarto. Click the arrow on the bottom right to continue.",
@@ -36,22 +37,7 @@ public class TutorialManager : MonoBehaviour
     public string ShowNextStep()
     {
         popupIndex++;
-
-        //
         return getCurrentCaption();
-        //
-
-        //for (int i = 0; i < popups.Length; i++)
-        //{
-        //    if (i == popupIndex)
-        //    {
-        //        popups[i].SetActive(true);
-        //    }
-        //    else
-        //    {
-        //        popups[i].SetActive(false);
-        //    }
-        //}
     }
 
     public string getCurrentCaption()
@@ -59,22 +45,35 @@ public class TutorialManager : MonoBehaviour
         return captions[popupIndex];
     }
 
-    void Start()
+    public void HideCurrentHilight()
     {
-        //Show the initial step
+        Debug.Log("Hiding hilight #" + (hilightIndex - 1));
+        if(hilightIndex - 1 >= 0)
+            hilights[hilightIndex - 1].SetActive(false);
     }
 
+    public void ShowNextHilight()
+    {
+        Debug.Log("Showing hilight #" + hilightIndex);
+        if (hilightIndex < hilights.Length)
+        {
+            if (hilightIndex > 0)
+            {
+                hilights[hilightIndex - 1].SetActive(false);
+                hilights[hilightIndex].SetActive(true);
+            }
+            else
+            {
+                hilights[hilightIndex].SetActive(true);
 
-    //Hello, I'm Peter Parrot and I'll be showing you how to play.
-    //The objective of this game is to create a line of four pieces which share at least one common characteristic.
-    //These characteristics are color, height, shape, and stamp. The line can be vertical, horizontal, or diagonal.
-    //***user input begins***
-    //The game begins with the first player sending a move to their opponent. Click the hilighted piece and then the check to
-    //   confirm that's the piece you'd like to send.
-    //Your opponent will place the piece on the board, then send you a piece to place. Turns continue in this way for the rest of the game.
-    //Let's jump ahead a few turns.
-    //If you look at the board now, there is a place for a potential win if a piece is _____ or _____. Make sure you don't give your
-    //   opponent a piece with these characteristics!
-    //Your opponent has given you a winning piece! Place it in the hilighted board space to win by ______ (characteristic).
-    //You've just completed your first game of Quarto! 
+            }
+            hilightIndex++;
+        }
+        else
+        {
+            Debug.Log("No more tutorial hilights left to show.");
+            return;
+
+        }
+    }
 }

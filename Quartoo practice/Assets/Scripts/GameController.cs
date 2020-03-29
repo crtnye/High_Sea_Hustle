@@ -10,8 +10,8 @@ public class GameController : MonoBehaviour
     private static NetworkController networkController = new NetworkController();
     private AIv1 aiController = new AIv1();
     private GameCore gameCore = new GameCore();
-    private TutorialManager tutorialManager = new TutorialManager();
-   
+    private TutorialManager tutorialManager;
+
     // Unity Objects
     public List<GamePiece> gamePieces;
     public Button[] buttonList;
@@ -20,6 +20,8 @@ public class GameController : MonoBehaviour
     public GameObject gameSceneManagerObject;
     public Text tutorialCaption;
     public Vector3 oldPosition;
+
+    public GameObject tutorialGameObject;
 
     // GameController specific variables
     private int playerTurn;
@@ -318,6 +320,8 @@ public class GameController : MonoBehaviour
     #region Tutorial Functions
     void StartTutorialModeGame()
     {
+        tutorialManager = tutorialGameObject.GetComponent<TutorialManager>();
+
         // Get the first caption from the array in tutorial manager
         tutorialCaption.text = tutorialManager.getCurrentCaption();
 
@@ -342,6 +346,7 @@ public class GameController : MonoBehaviour
             case 3:
                 // Have player select piece for opponent
                 EnableTutorialPiece();
+                tutorialManager.ShowNextHilight();
                 break;
             case 4:
                 // Inform player opponent will now place piece
@@ -359,9 +364,11 @@ public class GameController : MonoBehaviour
                 gamePiece = gamePieces[tutorialPieceIndex];
                 TutorialSetPiece(gamePiece);
                 EnableTutorialBoardSpace();
+                tutorialManager.ShowNextHilight();
                 break;
             case 7:
                 // Jump ahead a few turns
+                tutorialManager.HideCurrentHilight();
                 EnableTutorialNextArrow(nextArrow);
                 break;
             case 8:
@@ -373,6 +380,7 @@ public class GameController : MonoBehaviour
                 // Have user select piece to send opponent
                 tutorialPieceIndex = 9;
                 EnableTutorialPiece();
+                tutorialManager.ShowNextHilight();
                 break;
             case 10:
                 // Have opponent place piece and select player piece
@@ -387,9 +395,11 @@ public class GameController : MonoBehaviour
                 gamePiece = gamePieces[tutorialPieceIndex];
                 TutorialSetPiece(gamePiece);
                 EnableTutorialBoardSpace();
+                tutorialManager.ShowNextHilight();
                 break;
             case 12:
                 // Maybe include popup or something, for now this ensures the nextArrow is disabled
+                tutorialManager.HideCurrentHilight();
                 break;
             default:
                 // Enable arrow to go next
@@ -427,6 +437,12 @@ public class GameController : MonoBehaviour
     {
         Vector3 newPosition = button.transform.position;
         selectedPiece.transform.position = newPosition;
+    }
+
+    public void HighlightClicked()
+    {
+        Debug.Log("Inside HilightClicked()");
+        tutorialManager.HideCurrentHilight();
     }
 
     private void UpdateGameBoard()

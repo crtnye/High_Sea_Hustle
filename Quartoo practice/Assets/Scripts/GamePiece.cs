@@ -15,6 +15,9 @@ public class GamePiece : MonoBehaviour
         if (GameInfo.gameType != 'T')
             gameController.SetSelectedPiece(this);
         else
+        {
             gameController.TutorialSetPiece(this);
+            gameController.HighlightClicked();
+        }
     }
 }
