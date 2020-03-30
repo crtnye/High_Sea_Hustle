@@ -17,18 +17,9 @@ public class GameSceneManager : MonoBehaviour
     #region GameOver Panels
     public void showGameOverPanel(char endgameStatus)
     {
-        string message;
+        string endgameMessage = getGameOverMessage(endgameStatus);
 
-        if (endgameStatus == 'L')
-        {
-            message = "YOU LOST";
-        }
-        else
-        {
-            message = endgameStatus == 'W' ? "YOU WON!" : "YOU TIED";
-        }
-
-        gameOverMessage.text = message;
+        gameOverMessage.text = endgameMessage;
         gameOverPanel.SetActive(true);
     }
 
@@ -39,18 +30,10 @@ public class GameSceneManager : MonoBehaviour
 
     public void showNetworkGameOverPanel(char endgameStatus)
     {
-        string message;
 
-        if (endgameStatus == 'L')
-        {
-            message = "YOU LOST";
-        }
-        else
-        {
-            message = endgameStatus == 'W' ? "YOU WON!" : "YOU TIED";
-        }
+        string endgameMessage = getGameOverMessage(endgameStatus);
 
-        networkGameOverMessage.text = message;
+        networkGameOverMessage.text = endgameMessage;
         networkGameOverPanel.SetActive(true);
     }
 
@@ -61,7 +44,9 @@ public class GameSceneManager : MonoBehaviour
 
     public void showStoryModeWinPanel()
     {
+        Debug.Log("Inside showStoryModeWinPanel()");
         storyModeWinPanel.SetActive(true);
+        storyModeWinPanel.GetComponentInChildren<UnityEngine.UI.Text>().text = "Congratulations!";
     }
 
     public void hideStoryModeWinPanel()
@@ -71,7 +56,9 @@ public class GameSceneManager : MonoBehaviour
 
     public void showStoryModeLosePanel()
     {
+        Debug.Log("Inside showStoryModeLosePanel()");
         storyModeLosePanel.SetActive(true);
+        storyModeLosePanel.GetComponentInChildren<UnityEngine.UI.Text>().text = "Bummer!";
     }
 
     public void hideStoryModeLosePanel()
@@ -158,6 +145,22 @@ public class GameSceneManager : MonoBehaviour
         }
         else
             SceneManager.LoadScene("StoryMode");
+    }
+
+    private string getGameOverMessage(char endgameStatus)
+    {
+        string message;
+
+        if (endgameStatus == 'L')
+        {
+            message = "YOU LOST";
+        }
+        else
+        {
+            message = endgameStatus == 'W' ? "YOU WON!" : "YOU TIED";
+        }
+
+        return message;
     }
     #endregion
 }
