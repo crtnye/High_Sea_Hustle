@@ -139,13 +139,12 @@ public class GameSceneManager : MonoBehaviour
 
     public void continueStoryMode()
     {
-        Debug.Log("Inside continueStoryMode()");
         if (GameInfo.storyModeType == 'E')
         {
             GameInfo.storyModeType = 'H';
         }
-        else
-            SceneManager.LoadScene("StoryMode2");
+
+        SceneManager.LoadScene("StoryMode2");
     }
 
     private string getGameOverMessage(char endgameStatus)
