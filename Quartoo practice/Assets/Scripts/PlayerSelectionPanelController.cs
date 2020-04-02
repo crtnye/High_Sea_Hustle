@@ -17,18 +17,6 @@ public class PlayerSelectionPanelController : MonoBehaviour
     private bool easyAI = true;
     private string selectedAvatar = "PirateCaptain";
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void playButton()
     {
         //Not sure if this is the right way, but need some kind of check to provide a default name
@@ -38,6 +26,11 @@ public class PlayerSelectionPanelController : MonoBehaviour
         //Save the username and other relevant data somewhere
 
         SceneManager.LoadScene("GameScene");
+    }
+
+    public void backButton()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void firstMoveToggled()
