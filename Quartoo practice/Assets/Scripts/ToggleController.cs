@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Adapted from:     https://github.com/Kalxoznik/Unity-Toggle-controller
 public class ToggleController : MonoBehaviour 
 {
 	public  bool isOn;
