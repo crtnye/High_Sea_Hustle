@@ -25,6 +25,11 @@ public class PlayerSelectionPanelController : MonoBehaviour
 
         //Save the username and other relevant data somewhere
 
+        Debug.Log("Username: " + username);
+        Debug.Log("User goes first: " + userGoesFirst.ToString());
+        Debug.Log("Using the easy AI: " + easyAI.ToString());
+        Debug.Log("Selected avatar: " + selectedAvatar);
+
         SceneManager.LoadScene("GameScene");
     }
 
