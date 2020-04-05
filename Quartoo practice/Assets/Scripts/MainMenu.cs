@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -7,10 +9,20 @@ public class MainMenu : MonoBehaviour
     public GameObject settingsPanel;
     public GameObject darkBackground;
 
+    //These are for the scene transition
+    public Image greyFade;
+    public Animator fadeAnimation;
+
+    public void Start()
+    {
+        StartCoroutine(FadeIn());
+    }
+
     public void multiplayerGame()
     {
         GameInfo.gameType = 'N';
-        SceneManager.LoadScene("GameLobby");
+
+        StartCoroutine(LoadSceneAsync("GameLobby"));
     }
 
     public void storyModeGame()
@@ -20,7 +32,8 @@ public class MainMenu : MonoBehaviour
 
         GameInfo.gameType = 'S';
         GameInfo.storyModeType = 'E';
-        SceneManager.LoadScene("StoryMode");
+
+        StartCoroutine(LoadSceneAsync("StoryMode"));
     }
 
     public void quickGame()
@@ -31,14 +44,14 @@ public class MainMenu : MonoBehaviour
 
         GameInfo.storyModeType = 'T';
 
-        SceneManager.LoadScene("UserPreferences");
+        StartCoroutine(LoadSceneAsync("UserPreferences"));
     }
 
     public void tutorial()
     {
         GameInfo.gameType = 'T';
 
-        SceneManager.LoadScene("GameScene");
+        StartCoroutine(LoadSceneAsync("GameScene"));
     }
        
     public void showHelpPanel()
@@ -71,5 +84,25 @@ public class MainMenu : MonoBehaviour
             hideSettingsPanel();
         else
             hideHelpPanel();
+    }
+
+    //These functions are for the fade transitions between scenes
+    private IEnumerator LoadSceneAsync(string sceneName)
+    {
+        yield return FadeOut();
+        SceneManager.LoadScene(sceneName);
+    }
+
+    // Reference: https://youtu.be/iV-igTT5yE4
+    IEnumerator FadeIn()
+    {
+        fadeAnimation.SetBool("Fade", false);
+        yield return new WaitUntil(() => greyFade.color.a == 0);
+    }
+
+    IEnumerator FadeOut()
+    {
+        fadeAnimation.SetBool("Fade", true);
+        yield return new WaitUntil(() => greyFade.color.a == 1);
     }
 }
