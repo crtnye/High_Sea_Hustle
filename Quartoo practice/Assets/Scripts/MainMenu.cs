@@ -15,14 +15,15 @@ public class MainMenu : MonoBehaviour
 
     public void Start()
     {
-        StartCoroutine(FadeIn());
+        //StartCoroutine(FadeIn());
     }
 
     public void multiplayerGame()
     {
         GameInfo.gameType = 'N';
 
-        StartCoroutine(LoadSceneAsync("GameLobby"));
+        Initiate.Fade("GameLobby", Color.black, 0.75f);
+        //StartCoroutine(LoadSceneAsync("GameLobby"));
     }
 
     public void storyModeGame()
@@ -33,7 +34,8 @@ public class MainMenu : MonoBehaviour
         GameInfo.gameType = 'S';
         GameInfo.storyModeType = 'E';
 
-        StartCoroutine(LoadSceneAsync("StoryMode"));
+        Initiate.Fade("StoryMode", Color.black, 0.75f);
+        //StartCoroutine(LoadSceneAsync("StoryMode"));
     }
 
     public void quickGame()
@@ -43,14 +45,16 @@ public class MainMenu : MonoBehaviour
 
         GameInfo.storyModeType = 'T';
 
-        StartCoroutine(LoadSceneAsync("UserPreferences"));
+        Initiate.Fade("UserPreferences", Color.black, 0.5f);
+        //StartCoroutine(LoadSceneAsync("UserPreferences"));
     }
 
     public void tutorial()
     {
         GameInfo.gameType = 'T';
 
-        StartCoroutine(LoadSceneAsync("GameScene"));
+        Initiate.Fade("GameScene", Color.black, 0.5f);
+        //StartCoroutine(LoadSceneAsync("GameScene"));
     }
        
     public void showHelpPanel()
@@ -86,22 +90,22 @@ public class MainMenu : MonoBehaviour
     }
 
     //These functions are for the fade transitions between scenes
-    private IEnumerator LoadSceneAsync(string sceneName)
-    {
-        yield return FadeOut();
-        SceneManager.LoadScene(sceneName);
-    }
+    //private IEnumerator LoadSceneAsync(string sceneName)
+    //{
+    //    yield return FadeOut();
+    //    SceneManager.LoadScene(sceneName);
+    //}
 
-    // Reference: https://youtu.be/iV-igTT5yE4
-    IEnumerator FadeIn()
-    {
-        fadeAnimation.SetBool("Fade", false);
-        yield return new WaitUntil(() => greyFade.color.a == 0);
-    }
+    //// Reference: https://youtu.be/iV-igTT5yE4
+    //IEnumerator FadeIn()
+    //{
+    //    fadeAnimation.SetBool("Fade", false);
+    //    yield return new WaitUntil(() => greyFade.color.a == 0);
+    //}
 
-    IEnumerator FadeOut()
-    {
-        fadeAnimation.SetBool("Fade", true);
-        yield return new WaitUntil(() => greyFade.color.a == 1);
-    }
+    //IEnumerator FadeOut()
+    //{
+    //    fadeAnimation.SetBool("Fade", true);
+    //    yield return new WaitUntil(() => greyFade.color.a == 1);
+    //}
 }
