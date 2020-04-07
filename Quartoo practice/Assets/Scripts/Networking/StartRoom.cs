@@ -186,7 +186,7 @@ public class StartRoom : MonoBehaviourPunCallbacks, ILobbyCallbacks
         if (CreateOrJoinCanvas.isActiveAndEnabled)
         {
             PhotonNetwork.Disconnect();
-            SceneManager.LoadScene("MainMenu");
+            Initiate.Fade("MainMenu", Color.black, 4.0f);
         }
 
         if (RoomLobbyCanvas.isActiveAndEnabled || WaitingLoadingCanvas.isActiveAndEnabled)

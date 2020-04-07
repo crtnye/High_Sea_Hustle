@@ -85,6 +85,7 @@ public class Fader : MonoBehaviour
             else
             {
                 //Fade out
+                myCanvas.GetComponent<Canvas>().sortingOrder = 500;
                 alpha = newAlpha(coDelta, 0, alpha);
                 if (alpha == 0)
                 {

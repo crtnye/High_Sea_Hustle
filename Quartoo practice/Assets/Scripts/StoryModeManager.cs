@@ -53,12 +53,12 @@ public class StoryModeManager : MonoBehaviour
         else
         {
             //Load the game against the easy AI
-            SceneManager.LoadScene("GameScene");
+            Initiate.Fade("GameScene", Color.black, 4.0f);
         }
     }
 
     public void returnToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        Initiate.Fade("MainMenu", Color.black, 4.0f);
     }
 }

@@ -117,24 +117,24 @@ public class GameSceneManager : MonoBehaviour
     #region SceneChanges
     public void returnToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        Initiate.Fade("MainMenu", Color.black, 4.0f);
     }
 
     public void meFirst()
     {
         GameInfo.selectPieceAtStart = 1;
-        SceneManager.LoadScene("GameScene");
+        Initiate.Fade("GameScene", Color.black, 4.0f);
     }
 
     public void themFirst()
     {
         GameInfo.selectPieceAtStart = 2;
-        SceneManager.LoadScene("GameScene");
+        Initiate.Fade("GameScene", Color.black, 4.0f);
     }
 
     public void playAgain()
     {
-        SceneManager.LoadScene("GameScene");
+        Initiate.Fade("GameScene", Color.black, 4.0f);
     }
 
     public void continueStoryMode()
@@ -144,7 +144,7 @@ public class GameSceneManager : MonoBehaviour
             GameInfo.storyModeType = 'H';
         }
 
-        SceneManager.LoadScene("StoryMode2");
+        Initiate.Fade("StoryMode2", Color.black, 4.0f);
     }
 
     private string getGameOverMessage(char endgameStatus)

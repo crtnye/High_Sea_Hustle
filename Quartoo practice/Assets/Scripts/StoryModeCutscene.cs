@@ -48,7 +48,7 @@ public class StoryModeCutscene : MonoBehaviour
         else
         {
             //Load the game against the advanced AI
-            SceneManager.LoadScene("GameScene");
+            Initiate.Fade("GameScene", Color.black, 4.0f);
         }
     }
 }

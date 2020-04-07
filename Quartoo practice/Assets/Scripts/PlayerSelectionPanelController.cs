@@ -38,7 +38,7 @@ public class PlayerSelectionPanelController : MonoBehaviour
             else
                 GameInfo.gameType = 'H';
 
-            SceneManager.LoadScene("GameScene");
+            Initiate.Fade("GameScene", Color.black, 4.0f);
         }
         else if (usernameInput.text.Trim() == "")
             playerPrefsManager.ShowToast("Please provide a username", 3);
@@ -48,7 +48,7 @@ public class PlayerSelectionPanelController : MonoBehaviour
 
     public void backButton()
     {
-        SceneManager.LoadScene("MainMenu");
+        Initiate.Fade("MainMenu", Color.black, 4.0f);
     }
 
     public void firstMoveToggled()
