@@ -69,12 +69,10 @@ public class OpponentAvatarBarController : MonoBehaviour
             {
                 //Access the networked opponent's avatar and username
                 networkController.GetOpponentInfo(opponentsAvatar, opponentsUsername);
+                
+                usernametext.text = opponentsUsername;
+                ShowAvatar();
 
-                // opponentsAvatar and opponentsUsername should be stored correctly
-                // so you can whatever with either.  Chat recognizes the usernames and
-                // displays them correctly so it's a good start
-
-                // I can't use the Debuger but maybe check this
                 Debug.Log("Avatar: " + opponentsAvatar + " Name: " + opponentsUsername);
             }
             else if (GameInfo.gameType == 'S') //Story Mode
