@@ -17,21 +17,18 @@ public class OpponentAvatarBarController : MonoBehaviour
     private string opponentsUsername;
     void Start()
     {
-        if (GameInfo.gameType == 'T') //Tutorial
-            opponentAvatarBar.SetActive(false); //There is no opponent
+        //If its a Tutorial
+        if (GameInfo.gameType == 'T')
+            opponentAvatarBar.SetActive(false); //There is no opponent, hide the avatar bar
         else
         {
-            opponentAvatarBar.SetActive(true);
+            opponentAvatarBar.SetActive(true); //Make sure the avatar bar is visible
 
-            if (GameInfo.gameType == 'H') // Quick game hard
+            //If its a Quick game hard
+            if (GameInfo.gameType == 'H')
             {
-                if (GameInfo.avatar == "PirateCaptain")
-                {
-                    //Make opponent navy captain
-                    avatarImage.sprite = avatarImageOptions[2];
-                    usernametext.text = "Navy Captain";
-                }
-                else if (GameInfo.avatar == "NavyCaptain")
+                //Make the opponent the available captain avatar
+                if (GameInfo.avatar == "NavyCaptain")
                 {
                     //Make opponent pirate captain
                     avatarImage.sprite = avatarImageOptions[0];
@@ -46,13 +43,7 @@ public class OpponentAvatarBarController : MonoBehaviour
             }
             else if (GameInfo.gameType == 'E') //Quick game easy
             {
-                if (GameInfo.avatar == "PirateSailor")
-                {
-                    //make opponent navy sailor
-                    avatarImage.sprite = avatarImageOptions[3];
-                    usernametext.text = "Navy Sailor";
-                }
-                else if (GameInfo.avatar == "NavySailor")
+                if (GameInfo.avatar == "NavySailor")
                 {
                     //make opponent pirate sailor
                     avatarImage.sprite = avatarImageOptions[1];
@@ -68,12 +59,14 @@ public class OpponentAvatarBarController : MonoBehaviour
             else if (GameInfo.gameType == 'N') //Networked game
             {
                 //Access the networked opponent's avatar and username
+                Debug.Log("networkController: " + networkController);
                 networkController.SendPlayerInfo(opponentsAvatar, opponentsUsername);
 
                 usernametext.text = opponentsUsername;
                 ShowAvatar();
 
-                Debug.Log("***Courtney look here*** Avatar: " + opponentsAvatar + " Name: " + opponentsUsername);
+                Debug.Log("Avatar: " + opponentsAvatar);
+                Debug.Log("Name: " + opponentsUsername);
             }
             else if (GameInfo.gameType == 'S') //Story Mode
             {
@@ -99,10 +92,7 @@ public class OpponentAvatarBarController : MonoBehaviour
                 opponentsAvatar = "PirateCaptain";
                 usernametext.text = "Opponent Player";
                 ShowAvatar();
-                return;
             }
-
-            
         }
     }
 
