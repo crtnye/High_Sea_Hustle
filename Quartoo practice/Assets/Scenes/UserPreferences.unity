@@ -742,6 +742,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3957240556094406499, guid: 57b13bd1080503e448b1cdb062c89b78,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957240556094406499, guid: 57b13bd1080503e448b1cdb062c89b78,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957240556094406499, guid: 57b13bd1080503e448b1cdb062c89b78,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3957240556094406500, guid: 57b13bd1080503e448b1cdb062c89b78,
         type: 3}
       propertyPath: m_Name
@@ -755,7 +770,7 @@ PrefabInstance:
     - target: {fileID: 3957240556108834914, guid: 57b13bd1080503e448b1cdb062c89b78,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3957240556108834942, guid: 57b13bd1080503e448b1cdb062c89b78,
         type: 3}
