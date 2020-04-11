@@ -25,6 +25,7 @@ public class GameController : MonoBehaviour
     public GameObject networkChat;
 
     public GameObject ParretPopup;
+    public Text TurnMessage;
 
     // GameController specific variables
     private int playerTurn;
@@ -57,6 +58,8 @@ public class GameController : MonoBehaviour
             StartTutorialModeGame();
         else
             Debug.Log("Houston we have a problem");
+
+        UpdateTurnMessage();
     }
     #endregion
 
@@ -678,6 +681,8 @@ public class GameController : MonoBehaviour
     private void ChangeSides()
     {
         playerTurn = (playerTurn == 1) ? 2 : 1;
+
+        UpdateTurnMessage();
     }
     #endregion
 
@@ -810,6 +815,11 @@ public class GameController : MonoBehaviour
             StopAllCoroutines();
             gameSceneManagerObject.GetComponent<GameSceneManager>().showParrot();
         }
+    }
+
+    private void UpdateTurnMessage()
+    {
+        TurnMessage.text = playerTurn == 1 ? "Your Turn" : "Opponent's Turn";
     }
     #endregion
 }
