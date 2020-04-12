@@ -33,4 +33,9 @@ public class ButtonClick : MonoBehaviour
     {
         source.PlayOneShot(buttonClick);
     }
+
+    public void PlaySoundOneShot()
+    {
+        PlaySound();
+    }
 }

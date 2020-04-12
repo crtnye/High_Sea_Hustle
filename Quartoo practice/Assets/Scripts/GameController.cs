@@ -469,6 +469,7 @@ public class GameController : MonoBehaviour
     {
         Vector3 newPosition = button.transform.position;
         selectedPiece.transform.position = newPosition;
+        button.GetComponent<ButtonClick>().PlaySoundOneShot();
     }
 
     private void UpdateGameBoard()
@@ -518,6 +519,8 @@ public class GameController : MonoBehaviour
             selectedPiece.transform.position = newPosition;
             recentMove = button;
             button.interactable = false;
+
+            button.GetComponent<ButtonClick>().PlaySoundOneShot();
 
             if (GameInfo.gameType == 'N')
             {
