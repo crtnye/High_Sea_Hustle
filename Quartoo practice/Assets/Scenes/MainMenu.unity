@@ -973,6 +973,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 233778964192179123, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1660715512792398732, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
         type: 3}
       propertyPath: m_Name
@@ -982,6 +987,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762815608118661453, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762815608118661453, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762815608118661453, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762815608118661453, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1285391706}
+    - target: {fileID: 1762815608118661453, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: hideSettingsPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762815608118661453, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1918348234324478733, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1918348234324478733, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3302926170826292254, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
         type: 3}
@@ -997,6 +1042,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715660341586726637, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715660341586726637, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715660341586726637, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7755207020900241077, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
         type: 3}
@@ -1121,6 +1181,16 @@ PrefabInstance:
     - target: {fileID: 8202714609362768557, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202714609362768557, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202714609362768557, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9011973844062075191, guid: 4dd75d84a8b82c44c88c68d32fb5b86a,
