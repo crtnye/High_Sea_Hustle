@@ -10,6 +10,7 @@ public class GameSceneManager : MonoBehaviour
     public GameObject networkGameOverPanel;
     public GameObject storyModeLosePanel;
     public GameObject storyModeWinPanel;
+    public GameObject storyModeWin2Panel;
     public GameObject tutorial;
     public UnityEngine.UI.Text gameOverMessage;
     public UnityEngine.UI.Text networkGameOverMessage;
@@ -52,6 +53,18 @@ public class GameSceneManager : MonoBehaviour
     public void hideStoryModeWinPanel()
     {
         storyModeWinPanel.SetActive(false);
+    }
+
+    public void showStoryModeWin2Panel()
+    {
+        Debug.Log("Inside showStoryModeWin2Panel()");
+        storyModeWin2Panel.SetActive(true);
+        storyModeWin2Panel.GetComponentInChildren<UnityEngine.UI.Text>().text = "Congratulations!";
+    }
+
+    public void hideStoryModeWin2Panel()
+    {
+        storyModeWin2Panel.SetActive(false);
     }
 
     public void showStoryModeLosePanel()

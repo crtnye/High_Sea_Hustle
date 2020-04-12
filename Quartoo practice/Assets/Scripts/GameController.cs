@@ -672,7 +672,12 @@ public class GameController : MonoBehaviour
         if (GameInfo.gameType == 'S')
         {
             if (playerWinStatus == 'W')
-                gameSceneManagerObject.GetComponent<GameSceneManager>().showStoryModeWinPanel();
+            {
+                if (GameInfo.storyModeType == 'E')
+                    gameSceneManagerObject.GetComponent<GameSceneManager>().showStoryModeWinPanel();
+                else
+                    gameSceneManagerObject.GetComponent<GameSceneManager>().showStoryModeWin2Panel();
+            }
             else
                 gameSceneManagerObject.GetComponent<GameSceneManager>().showStoryModeLosePanel();
         }
