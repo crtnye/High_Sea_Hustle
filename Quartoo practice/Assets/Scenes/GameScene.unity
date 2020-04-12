@@ -606,7 +606,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -656,7 +656,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -5.3
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -666,7 +666,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 142.5
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -702,6 +702,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -849,7 +854,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.9
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -899,7 +904,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -909,7 +914,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 149.3
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -946,6 +951,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Board Highlight
       objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
 --- !u!4 &247719552 stripped
@@ -974,7 +984,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 10.3
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -1019,12 +1029,12 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -12.6
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -1034,7 +1044,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 151.6
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -1728,7 +1738,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -1778,7 +1788,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -1788,7 +1798,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 177.8
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -1824,6 +1834,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -3115,7 +3130,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 6.6
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -3160,12 +3175,12 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -10.3
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -3175,7 +3190,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 170.2
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -3211,6 +3226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -6760,7 +6780,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -6810,7 +6830,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -6820,7 +6840,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 140.2
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -6856,6 +6876,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -7993,7 +8018,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -8038,12 +8063,12 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -8053,7 +8078,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 182.8
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -8089,6 +8114,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -9370,7 +9400,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -10.5
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -9380,7 +9410,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 164
+      value: 143
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -9421,6 +9451,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -9544,7 +9579,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -9594,7 +9629,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -5.9
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -9604,7 +9639,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 144.7
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -9640,6 +9675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -10393,7 +10433,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 4.3
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -10403,7 +10443,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 164
+      value: 155.4
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -10445,6 +10485,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Board Highlight
       objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
 --- !u!1001 &1697853520
@@ -10467,7 +10512,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 9.5
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -10512,12 +10557,12 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -11.6
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -10527,7 +10572,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 175.3
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -10563,6 +10608,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -10771,6 +10821,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GamePiece A3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146775076226727656, guid: 8cc87937eabcc104bba7ed2842a255f6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cc87937eabcc104bba7ed2842a255f6, type: 3}
@@ -11113,7 +11168,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -11163,7 +11218,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -5.9
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -11173,7 +11228,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 144.7
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -11209,6 +11264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -11459,7 +11519,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.9
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -11509,7 +11569,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -11519,7 +11579,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 149.3
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -11641,7 +11701,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -11691,7 +11751,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -5.8
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -11701,7 +11761,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 121.8
+      value: 144.8
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -11737,6 +11797,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -12958,7 +13023,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -13008,7 +13073,7 @@ PrefabInstance:
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4290894141756000929, guid: e18abd25826fbc04b9bd9795e27875b6,
         type: 3}
@@ -13054,6 +13119,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
@@ -14270,6 +14340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Board Highlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290894141756000934, guid: e18abd25826fbc04b9bd9795e27875b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18abd25826fbc04b9bd9795e27875b6, type: 3}
