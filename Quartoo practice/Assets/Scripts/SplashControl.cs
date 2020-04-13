@@ -8,6 +8,8 @@ public class SplashControl : MonoBehaviour
 {
     public Image gameLogo;
     public Image teamLogo;
+    public Image blackBackground;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,34 +28,42 @@ public class SplashControl : MonoBehaviour
     {
         gameLogo.canvasRenderer.SetAlpha(0);
         teamLogo.canvasRenderer.SetAlpha(0);
-        gameLogoFadeIn();
-        yield return new WaitForSeconds(5);
-        gameLogoFadeOut();
-        yield return new WaitForSeconds(5);
         teamLogoFadeIn();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         teamLogoFadeOut();
+        yield return new WaitForSeconds(2);
+        blackBackgroundFadeOut();
+        yield return new WaitForSeconds(2);
+        gameLogoFadeIn();
         yield return new WaitForSeconds(3);
+        gameLogoFadeOut();
+        yield return new WaitForSeconds(2);
+
         Initiate.Fade("MainMenu", Color.black, 4.0f);
     }
 
     void gameLogoFadeIn()
     {
-        gameLogo.CrossFadeAlpha(1,3, false);
+        gameLogo.CrossFadeAlpha(1,2, false);
     }
 
     void gameLogoFadeOut()
     {
-        gameLogo.CrossFadeAlpha(0,3, false);
+        gameLogo.CrossFadeAlpha(0,2, false);
     }
 
     void teamLogoFadeIn()
     {
-        teamLogo.CrossFadeAlpha(1,3, false);
+        teamLogo.CrossFadeAlpha(1,2, false);
     }
 
     void teamLogoFadeOut()
     {
-        teamLogo.CrossFadeAlpha(0,3, false);
+        teamLogo.CrossFadeAlpha(0,2, false);
+    }
+
+    void blackBackgroundFadeOut()
+    {
+        blackBackground.CrossFadeAlpha(0, 2, false);
     }
 }
