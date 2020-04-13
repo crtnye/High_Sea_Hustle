@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11.48, y: -2.46}
+  m_AnchoredPosition: {x: -11.479996, y: -2.459999}
   m_SizeDelta: {x: -59.04, y: -60.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3969504414057097471
@@ -69,14 +69,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 40
+    m_MaxSize: 24
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: username
 --- !u!1 &3969504414296479445
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,8 +114,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 3.4400024, y: 0.020019531}
-  m_SizeDelta: {x: 336.02, y: 130.21}
+  m_AnchoredPosition: {x: 26.25, y: -8.82}
+  m_SizeDelta: {x: 290.41, y: 112.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3969504414296479450
 CanvasRenderer:
