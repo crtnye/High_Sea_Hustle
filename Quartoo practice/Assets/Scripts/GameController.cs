@@ -539,11 +539,8 @@ public class GameController : MonoBehaviour
 
             iTween.MoveTo(gamePiece, pieceAnimationArgs);
 
-            // selectedPiece.transform.position = newPosition;
             recentMove = button;
             button.interactable = false;
-
-            //button.GetComponent<ButtonClick>().PlaySoundOneShot();
 
             if (GameInfo.gameType == 'N')
             {
