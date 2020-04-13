@@ -27,6 +27,7 @@ public class GameController : MonoBehaviour
 
     public GameObject ParretPopup;
     public Text TurnMessage;
+    public GameObject ButtonClickSound;
 
     // GameController specific variables
     private int playerTurn;
@@ -172,7 +173,6 @@ public class GameController : MonoBehaviour
         selectedPiece.transform.position = newPosition;
         recentMove = networkButton;
         networkButton.interactable = false;
-        HighlightBoardspace();
 
         // Returns a specific char if game is over 
         char gameState = gameCore.SetPiece(selectedPiece.id, networkButton.name);
@@ -338,7 +338,6 @@ public class GameController : MonoBehaviour
     {
         yield return new WaitForSeconds(GameInfo.aiDelayBoardSpace);
         PlacePieceOnBoard(boardSpace);
-        HighlightBoardspace();
     }
 
     IEnumerator DelayAIGivePiece()
@@ -482,7 +481,6 @@ public class GameController : MonoBehaviour
     {
         Vector3 newPosition = button.transform.position;
         selectedPiece.transform.position = newPosition;
-        button.GetComponent<ButtonClick>().PlaySoundOneShot();
     }
 
     private void UpdateGameBoard()
@@ -530,12 +528,22 @@ public class GameController : MonoBehaviour
             selectedPiece.GetComponent<BoxCollider2D>().enabled = false;
             Vector3 newPosition = button.transform.position;
             GameObject gamePiece = GameObject.Find("GamePiece " + selectedPiece.id);
-            iTween.MoveTo(gamePiece, newPosition, 2);
-           // selectedPiece.transform.position = newPosition;
+
+            Hashtable pieceAnimationArgs = new Hashtable()
+            {
+                {"position", newPosition},
+                {"time", 1.5f},
+                {"oncomplete", "boardSpaceSoundAndHilight"},
+                {"oncompletetarget", this.gameObject}
+            };
+
+            iTween.MoveTo(gamePiece, pieceAnimationArgs);
+
+            // selectedPiece.transform.position = newPosition;
             recentMove = button;
             button.interactable = false;
 
-            button.GetComponent<ButtonClick>().PlaySoundOneShot();
+            //button.GetComponent<ButtonClick>().PlaySoundOneShot();
 
             if (GameInfo.gameType == 'N')
             {
@@ -875,6 +883,13 @@ public class GameController : MonoBehaviour
     {
         Debug.Log(recentMove + " state = " + recentMove.transform.GetChild(0).gameObject.activeSelf);
         recentMove.transform.GetChild(0).gameObject.SetActive(false);
+    }
+
+    private void boardSpaceSoundAndHilight()
+    {
+        Debug.Log("inside boardSpaceSoundAndHilight()");
+        HighlightBoardspace();
+        ButtonClickSound.GetComponent<ButtonClick>().PlaySoundOneShot();
     }
     #endregion
 }
