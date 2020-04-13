@@ -32,11 +32,11 @@ public class SplashControl : MonoBehaviour
         teamLogoFadeIn();
         yield return new WaitForSeconds(2);
         teamLogoFadeOut();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         blackBackgroundFadeOut();
         yield return new WaitForSeconds(2);
         gameLogoFadeIn();
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(6);
         gameLogoFadeOut();
         yield return new WaitForSeconds(2);
 
@@ -61,7 +61,7 @@ public class SplashControl : MonoBehaviour
 
     void teamLogoFadeOut()
     {
-        teamLogo.CrossFadeAlpha(0,2, false);
+        teamLogo.CrossFadeAlpha(0,1, false);
     }
 
     void blackBackgroundFadeOut()
