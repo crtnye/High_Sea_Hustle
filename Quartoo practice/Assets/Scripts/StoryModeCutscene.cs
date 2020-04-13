@@ -19,7 +19,7 @@ public class StoryModeCutscene : MonoBehaviour
 
     string[] sailorDialogueLines =
     {
-        "Not so fast, I demand a rematch. I'm going to call my Captain to play you a round. She's quite the competitor."
+        "Not so fast, I demand a rematch. Let's see how you fare against my Captain, she's quite the competitor!"
     };
 
     void Start()
