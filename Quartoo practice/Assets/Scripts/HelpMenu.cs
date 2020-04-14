@@ -26,14 +26,23 @@ public class HelpMenu : MonoBehaviour
     void Start()
     {
         i = 0;
+
+        previousImage.interactable = false;
+        nextImage.interactable = true;
         updatePanel();
     }
 
     public void next()
     {
+        previousImage.interactable = true;
+
         if (i < images.Length - 1)
         {
             i++;
+
+            if (i == images.Length - 1)
+                nextImage.interactable = false;
+
             updatePanel();
         }
         else
@@ -44,9 +53,15 @@ public class HelpMenu : MonoBehaviour
 
     public void previous()
     {
+        nextImage.interactable = true;
+
         if (i - 1 >= 0)
         {
             i--;
+
+            if (i == 0)
+                previousImage.interactable = false;
+
             updatePanel();
         }
     }
