@@ -572,7 +572,9 @@ public class GameController : MonoBehaviour
             Hashtable pieceAnimationArgs = new Hashtable()
             {
                 {"position", newPosition},
-                {"time", 1.5f}
+                {"time", 1},
+                {"oncomplete", "stagePieceSound"},
+                {"oncompletetarget", this.gameObject}
             };
 
             iTween.MoveTo(gamePiece, pieceAnimationArgs);
@@ -585,7 +587,9 @@ public class GameController : MonoBehaviour
             Hashtable pieceAnimationArgs = new Hashtable()
             {
                 {"position", newPosition},
-                {"time", 1.5f}
+                {"time", 1},
+                {"oncomplete", "stagePieceSound"},
+                {"oncompletetarget", this.gameObject}
             };
 
             iTween.MoveTo(gamePiece, pieceAnimationArgs);
@@ -900,6 +904,10 @@ public class GameController : MonoBehaviour
 
         if (playerTurn == 2)
             HighlightBoardspace();
+    }
+    private void stagePieceSound()
+    {
+        ButtonClickSound.GetComponent<ButtonClick>().PlaySoundOneShot();
     }
     #endregion
 }
