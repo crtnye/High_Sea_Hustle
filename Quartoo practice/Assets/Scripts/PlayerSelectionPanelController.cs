@@ -42,7 +42,10 @@ public class PlayerSelectionPanelController : MonoBehaviour
             Initiate.Fade("GameScene", Color.black, 4.0f);
         }
         else if (usernameInput.text.Trim() == "")
+        {
             playerPrefsManager.ShowToast("Please provide a username", 3);
+            playerPrefsManager.SpinParrots();
+        }
         else if (usernameInput.text.Trim().Length > GameInfo.usernameLength && !playerPrefsManager.isToastActive())
             playerPrefsManager.ShowToast("Username must be " + GameInfo.usernameLength + " letters or less", 3);
     }
@@ -60,7 +63,10 @@ public class PlayerSelectionPanelController : MonoBehaviour
             Initiate.Fade("GameLobby", Color.black, 4.0f);
         }
         else if (usernameInput.text.Trim() == "")
+        {
             playerPrefsManager.ShowToast("Please provide a username", 3);
+            playerPrefsManager.SpinParrots();
+        }
         else if (usernameInput.text.Trim().Length > GameInfo.usernameLength && !playerPrefsManager.isToastActive())
             playerPrefsManager.ShowToast("Username must be " + GameInfo.usernameLength + " letters or less", 3);
     }
