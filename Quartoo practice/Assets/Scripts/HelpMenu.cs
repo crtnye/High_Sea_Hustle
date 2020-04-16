@@ -13,15 +13,15 @@ public class HelpMenu : MonoBehaviour
     public int i;
 
     private string[] text =
-        {
-            "High Sea Hustle is an adaptation of the modern abstract strategy game Quarto. The game consists of 16 pieces and a board with 16 locations. " +
-            "The pieces have 4 characteristics: gold or silver, tall or short, round or angular, and plain or embossed.",
-            "Players take turns giving their opponent a piece to place, then placing the piece given to them. Double click on a piece to give it to your opponent.",
-            "Your opponent will place the piece on the board, then give you a piece to place. If its your first game, a parrot will occasionally appear to give you tips and tricks.",
-            "The game continues in this pattern, placing the piece you've been given and then selecting a piece to give to your opponent. " +
-            "The object of the game is to be the first person to establish a line of 4 pieces which share a common characteristic.",
-            "The line can be formed in any direction: vertical, horizontal, or diagonal. The challenge is keeping track of all the possible winning conditions on the board. Good luck!"
-        };
+    {
+        "High Sea Hustle is an adaptation of the modern abstract strategy game Quarto. The game consists of 16 pieces and a board composed of 16 square spaces.",
+        "Game pieces have 4 characteristics: gold or silver, tall or short, round or angular, and plain or with an emblem.",
+        "The player going first gives a piece to their opponent to begin the game.",
+        "The opponent will place that piece on the board, then select a piece to give back.",
+        "The game continues in this pattern, placing a piece by clicking inside one of the squares and then double clicking on a piece to give it to your opponent.",
+        "The object of the game is to be the first person to establish a line of 4 pieces which share a common characteristic.",
+        "The line can be formed in any direction: vertical, horizontal, or diagonal. The challenge is keeping track of all the possible winning conditions on the board. Good luck!"
+    };
 
     void Start()
     {
